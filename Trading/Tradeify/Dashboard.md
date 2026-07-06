@@ -19,11 +19,12 @@ Breaking my own sheet. With a −$400 daily stop and 10R of drawdown room, blowi
 ## Links
 - [[Playbook]] — the rules (pin this)
 - [[Trade Log]] — every trade, Rule-Follow scoreboard
+- [[Backtest Journal]] — **Phase 0**: prove the edge in sim, measure real win rate + avg R
 - [[Daily Journal Template]] — copy this each trading day
 - [[Trading Bible]] — separate 15-min ORB / FTMO system (do not mix)
 
 ## Phase tracker
-- [ ] **Phase 0** — this week: run the playbook on sim/small, measure my real win rate + avg winner (R)
+- [ ] **Phase 0** — this week: run the playbook on sim/small, measure my real win rate + avg winner (R) → log in [[Backtest Journal]]
 - [ ] **Phase 1** — pass ONE 50k cleanly at $200 risk (process, not luck)
 - [ ] **Phase 2** — first payout (keep the funded account alive; self-impose 40% consistency even though funded drops it)
 - [ ] **Phase 3** — scale accounts toward $200k under management (add only after the previous pays)
