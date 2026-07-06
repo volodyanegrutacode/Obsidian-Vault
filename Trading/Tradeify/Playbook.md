@@ -40,6 +40,11 @@
 - **Week 1, the only metric is Rule-Follow %, not money.**
 - Follow rules + lose = **a WIN.** Break rules + win = **a LOSS** (a time bomb).
 
+## 8. Tilt kill-switch — the sub-20s stop
+- **Any stop-out in under ~20 seconds = I chased an overleveraged entry. Proof, not opinion.** In the whole eval history it happened *only* on the two blow-up days, *never* on a green day (see [[Eval History Analysis]]).
+- If it happens: **platform off for the day, immediately.** Then write down what I felt right before I clicked. That entry — not the exit — is the leak.
+- This is confirmation, not prevention. The prevention is §1 (fixed $200) + §2 (A+ only). Fixed size means the fast stop can't also be a *big* stop.
+
 ---
 
 ### Pass math

@@ -7,6 +7,7 @@
 ## Current status
 - **Account:** 50k Select — $3,000 target · $2,000 EOD drawdown · 3-day min · 40% consistency · no time limit
 - **Eval #:** 5 (attempts 1–4 blown at the finish line, top 128/65k in the comp — edge is proven, operator is the fix)
+- **Measured edge (43 real trades):** 33% win · **5.3:1 payoff** · +$13,266 net — *all* damage came from 2 tilt days. See [[Eval History Analysis]].
 - **Risk per trade:** **$200 (1R)** — locked. Not $500. Ever.
 - **Start date:** _____
 - **Current balance:** _____
@@ -24,7 +25,8 @@ Breaking my own sheet. With a −$400 daily stop and 10R of drawdown room, blowi
 - [[Trading Bible]] — separate 15-min ORB / FTMO system (do not mix)
 
 ## Phase tracker
-- [ ] **Phase 0** — this week: run the playbook on sim/small, measure my real win rate + avg winner (R) → log in [[Backtest Journal]]
+- [x] **Phase 0a** — edge measured from 43 real eval trades: 33% win, 5.3:1 payoff → [[Eval History Analysis]] *(edge confirmed; leak is behavioral, not statistical)*
+- [ ] **Phase 0b** — run the playbook at $200 fixed on sim/small, confirm same edge with clean sizing → log in [[Backtest Journal]]
 - [ ] **Phase 1** — pass ONE 50k cleanly at $200 risk (process, not luck)
 - [ ] **Phase 2** — first payout (keep the funded account alive; self-impose 40% consistency even though funded drops it)
 - [ ] **Phase 3** — scale accounts toward $200k under management (add only after the previous pays)
