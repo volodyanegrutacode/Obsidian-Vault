@@ -7,7 +7,7 @@
 ## Current status
 - **Account:** 50k Select — $3,000 target · $2,000 EOD drawdown · 3-day min · 40% consistency · no time limit
 - **Eval #:** 5 (attempts 1–4 blown at the finish line, top 128/65k in the comp — edge is proven, operator is the fix)
-- **Measured edge (43 real trades):** 33% win · **5.3:1 payoff** · +$13,266 net — *all* damage came from 2 tilt days. See [[Eval History Analysis]].
+- **Measured edge (full history, 286 positions, Apr'25–Jun'26):** **+$25,401 net** · 2026 evals 48% win / 2.0 payoff. Main conclusion: **size is the disaster amplifier** — worst day scales 5→10→20 lots as −$2.3k→−$2.1k→−$5.3k. Fixed $200 caps it. See [[Eval History Analysis]].
 - **Risk per trade:** **$200 (1R)** — locked. Not $500. Ever.
 - **Start date:** _____
 - **Current balance:** _____

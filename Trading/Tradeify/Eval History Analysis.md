@@ -1,50 +1,45 @@
 # 🔬 Eval History Analysis — the receipts
 
-> **Why this note exists:** proof that the edge is real and the leak is behavioral, drawn from **43 real trades across 10 sessions** of the 2026 evals (May–June). When doubt or impatience shows up, re-read this. The numbers already settled the argument.
-
-## The headline — the edge is real
-| Metric | Value |
-|---|---|
-| Win rate | **33%** (14 wins / 29 losses) |
-| Avg win | **+$1,551** |
-| Avg loss | **−$291** |
-| **Payoff ratio** | **5.3 : 1** |
-| Net across sample | **+$13,266** |
-
-A 33% win rate that still prints money is *only* possible with a big payoff ratio. I lose small and win big — **when I let a trade work.** This is not a strategy problem.
-
-## Where all the damage came from
-8 of 10 sessions were green. **100% of the loss came from 2 days** — 05-15 and 06-05:
-
-| Date | Trades | Result | Signature |
-|---|---|---|---|
-| 2026-05-14 | 1 | +$993 | green |
-| **2026-05-15** | 5 | **−$2,026** | **RED — 0 winners, all stop-outs** |
-| 2026-05-18 | 5 | +$3,046 | 4 straight losers → +$4,426 |
-| 2026-05-19 | 5 | +$5,488 | green |
-| 2026-05-20 | 4 | +$2,210 | green |
-| 2026-05-21 | 1 | +$764 | green |
-| 2026-05-22 | 5 | +$2,773 | green |
-| 2026-06-03 | 4 | +$1,089 | green |
-| 2026-06-04 | 7 | +$963 | green |
-| **2026-06-05** | 6 | **−$2,034** | **RED — 0 winners, all stop-outs** |
-
-## The diagnosis — confirmed, not guessed
-Both red days share one fingerprint that **never appears on a single green day**:
-
-- **Stop-outs in under 20 seconds.** 05-15 ended on a 16s stop. 06-05 ended on a **9-second** then a **5-second** stop (−$509, −$259). A full stop hit that fast = I entered *into* a move already reversing = **I chased**, and I was **overleveraged** (big dollar loss, tiny time).
-- **Back-loaded collapse.** The fast/biggest stops come *last*, after I'm already −$1,200+ down. That's the capitulation phase — no longer trading setups, just firing at the screen.
-- **Pausing didn't save me.** On 06-05 I waited 10 minutes mid-tilt and still spiraled. Slowing down is not the fix. **Not trading is.**
-
-## The insight that dictates the whole playbook
-> I **cannot risk-manage my way out of this** with a loss limit, because my green and red days are statistical twins until the winner lands. On 05-18 I took **4 straight losses before a +$4,426** made the day. Any "stop after N losers / stop at −$X" rule that catches the red days also kills my comeback days.
+> **Why this note exists:** proof of what's real and what's the leak, from my **full Tradezella history: 355 fills → 286 real positions, Apr 2025 → Jun 2026** (~48 trading days, all accounts incl. the competition). When doubt or impatience shows up, re-read this. The numbers already settled the argument.
 >
-> **Therefore the only lever is entry quality + fixed size — not a brake applied after the fact.** Fixed $200 risk removes the overleverage tool I tilt with. That is *why* $200 matters more than any daily-loss rule.
+> ⚠️ *Total net below (+$25,401) is from a hand-parsed paste — cross-check against Tradezella's lifetime P&L. Data + scripts: `~/workspace/tradeify/full_analysis.py`, `all_trades_raw.txt`.*
 
-## What this proves for the plan
-1. **Fixed $200/trade** kills the overleverage → the instant-stop spiral can't happen. ➜ [[Playbook]] §1
-2. **Sub-20-second stop-out = hard kill-switch.** Zero false positives in the data. If it happens: platform off, log the emotion. ➜ [[Playbook]] §8
-3. **Accept the slow.** ~20 trading days is fine. The impatience is the disease; the calendar is free.
+## The headline — I am a net-profitable trader
+**Total net across everything: +$25,401** over 15 months. The edge is real and durable. The job is not "find an edge," it's "stop handing it back."
 
-*Related: [[Dashboard]] · [[Playbook]] · [[Trade Log]] · [[tradeify-funding-journey]]*
-*Source data + scripts: `~/workspace/tradeify/analyze_evals.py`, `redday_sequences.py`*
+## 🎯 THE MAIN CONCLUSION — size is the disaster amplifier
+My tilt behavior is roughly **constant**. What scales the damage is **contract size**. Worst single day, by the size I was trading at the time:
+
+| Size regime | Worst day |
+|---|---|
+| 5-lot (Apr '25) | −$2,298 |
+| 10-lot (2026 evals) | −$2,092 |
+| **20-lot (competition)** | **−$5,288** |
+
+Same behavior, 2.5× the crater. **The fixed-$200 rule isn't there to stop me tilting — it's there to make tilting survivable.** Give myself 20-lot room and I *will* eventually have a −$5k day. This is proven across 15 months, not a theory.
+
+Supporting test — *revenge-sizing is only mild on average* (size after a loss 10.8 lots vs after a win 9.5; peak size on red vs green days ~equal at 9.1 vs 9.3). So I don't systematically balloon size — but when the account *lets* me (competition, no cap), one tilt session becomes a catastrophe. **The cap removes the failure mode.**
+
+## By account / period
+| Period | Net | Win% | Payoff | Note |
+|---|---|---|---|---|
+| Apr–Jun '25 evals | −$1,469 | 38% | 1.4 | early, no edge yet |
+| Oct '25 eval | +$1,052 | 32% | 2.6 | |
+| Nov '25 (pre-comp) | +$4,132 | 50% | 2.9 | |
+| **Nov '25 COMPETITION** | +$2,934 | 28% | 2.8 | 18 lots avg · +$8,838 best day · **−$5,288 worst** |
+| Jan–Mar '26 evals | **−$3,081** | 18% | 0.6 | ⚠️ **worst stretch ever** |
+| **May–Jun '26 (50k evals)** | **+$20,836** | 48% | 2.0 | the bulk of the profit |
+
+## Other confirmed findings
+- **The competition proves I can win aggressive** (+$2,934 net, one +$8,838 day) — but at −$5k daily variance. For *funded survival* that variance is the enemy, not the edge. Different game (see [[Dashboard]]).
+- **Jan–Mar '26 was a real disaster** (0.6 payoff, 18% win rate — losing more per loss than making per win). The anti-pattern. Its signature trade: 23 Mar held **9h 44m for −$1,445**, a 2-lot bag-hold — the exact opposite of my edge (cut fast, let winners run).
+- **Tilt fingerprint (from the 2026 evals):** stop-outs in **under 20 seconds** appear *only* on blow-up days, never on a green day. Zero false positives. ➜ hard kill-switch, [[Playbook]] §8.
+- **Damage is back-loaded** — the worst/fastest stops come after already −$1,200+ down (capitulation phase). Pausing didn't help (10-min gap on 06-05, still spiraled). Slowing down ≠ fix; *not trading* is.
+
+## What this dictates
+1. **Fixed $200/trade (~4–5 MNQ)** — the size cap that mechanically removes the −$5k-day failure mode. ➜ [[Playbook]] §1
+2. **Same size winning or losing**, define stop first then size. ➜ [[Playbook]] §1
+3. **Sub-20s stop-out = platform off, log the emotion.** ➜ [[Playbook]] §8
+4. **Accept the slow (~20 days).** The impatience is the disease; the calendar is free.
+
+*Related: [[Dashboard]] · [[Playbook]] · [[Trade Log]]*
